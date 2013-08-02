@@ -1,0 +1,284 @@
+2012-11-15 2:02:29 - INFO --> ; WPCF7_ContactForm::__set_state(array(
+   'initial' => false,
+   'id' => 84,
+   'title' => 'User to User Contact Form',
+   'unit_tag' => NULL,
+   'responses_count' => 0,
+   'scanned_form_tags' => 
+  array (
+    0 => 
+    array (
+      'type' => 'text',
+      'name' => 'your-subject',
+      'options' => 
+      array (
+      ),
+      'raw_values' => 
+      array (
+      ),
+      'values' => 
+      array (
+      ),
+      'pipes' => 
+      WPCF7_Pipes::__set_state(array(
+         'pipes' => 
+        array (
+        ),
+      )),
+      'labels' => 
+      array (
+      ),
+      'attr' => '',
+      'content' => '',
+    ),
+    1 => 
+    array (
+      'type' => 'textarea',
+      'name' => 'your-message',
+      'options' => 
+      array (
+      ),
+      'raw_values' => 
+      array (
+      ),
+      'values' => 
+      array (
+      ),
+      'pipes' => 
+      WPCF7_Pipes::__set_state(array(
+         'pipes' => 
+        array (
+        ),
+      )),
+      'labels' => 
+      array (
+      ),
+      'attr' => '',
+      'content' => '',
+    ),
+    2 => 
+    array (
+      'type' => 'captchac',
+      'name' => 'captcha',
+      'options' => 
+      array (
+      ),
+      'raw_values' => 
+      array (
+      ),
+      'values' => 
+      array (
+      ),
+      'pipes' => 
+      WPCF7_Pipes::__set_state(array(
+         'pipes' => 
+        array (
+        ),
+      )),
+      'labels' => 
+      array (
+      ),
+      'attr' => '',
+      'content' => '',
+    ),
+    3 => 
+    array (
+      'type' => 'captchar',
+      'name' => 'captcha',
+      'options' => 
+      array (
+      ),
+      'raw_values' => 
+      array (
+      ),
+      'values' => 
+      array (
+      ),
+      'pipes' => 
+      WPCF7_Pipes::__set_state(array(
+         'pipes' => 
+        array (
+        ),
+      )),
+      'labels' => 
+      array (
+      ),
+      'attr' => '',
+      'content' => '',
+    ),
+    4 => 
+    array (
+      'type' => 'submit',
+      'name' => '',
+      'options' => 
+      array (
+      ),
+      'raw_values' => 
+      array (
+        0 => 'Contact User',
+      ),
+      'values' => 
+      array (
+        0 => 'Contact User',
+      ),
+      'pipes' => 
+      WPCF7_Pipes::__set_state(array(
+         'pipes' => 
+        array (
+          0 => 
+          WPCF7_Pipe::__set_state(array(
+             'before' => 'Contact User',
+             'after' => 'Contact User',
+          )),
+        ),
+      )),
+      'labels' => 
+      array (
+        0 => 'Contact User',
+      ),
+      'attr' => '',
+      'content' => '',
+    ),
+    5 => 
+    array (
+      'type' => 'dynamichidden',
+      'name' => 'userto',
+      'options' => 
+      array (
+      ),
+      'raw_values' => 
+      array (
+        0 => 'hockeyloyal_user_to',
+      ),
+      'values' => 
+      array (
+        0 => 'hockeyloyal_user_to',
+      ),
+      'pipes' => 
+      WPCF7_Pipes::__set_state(array(
+         'pipes' => 
+        array (
+          0 => 
+          WPCF7_Pipe::__set_state(array(
+             'before' => 'hockeyloyal_user_to',
+             'after' => 'hockeyloyal_user_to',
+          )),
+        ),
+      )),
+      'labels' => 
+      array (
+        0 => 'hockeyloyal_user_to',
+      ),
+      'attr' => '',
+      'content' => '',
+    ),
+    6 => 
+    array (
+      'type' => 'dynamichidden',
+      'name' => 'userfrom',
+      'options' => 
+      array (
+      ),
+      'raw_values' => 
+      array (
+        0 => 'hockeyloyal_user_from',
+      ),
+      'values' => 
+      array (
+        0 => 'hockeyloyal_user_from',
+      ),
+      'pipes' => 
+      WPCF7_Pipes::__set_state(array(
+         'pipes' => 
+        array (
+          0 => 
+          WPCF7_Pipe::__set_state(array(
+             'before' => 'hockeyloyal_user_from',
+             'after' => 'hockeyloyal_user_from',
+          )),
+        ),
+      )),
+      'labels' => 
+      array (
+        0 => 'hockeyloyal_user_from',
+      ),
+      'attr' => '',
+      'content' => '',
+    ),
+  ),
+   'posted_data' => 
+  array (
+    '_wpcf7' => '84',
+    '_wpcf7_version' => '3.3.1',
+    '_wpcf7_unit_tag' => 'wpcf7-f84-t1-o1',
+    '_wpnonce' => 'af28b1359b',
+    'your-subject' => '123',
+    'your-message' => '456',
+    '_wpcf7_captcha_challenge_captcha' => '735610666',
+    'captcha' => '7S52',
+    'userto' => 'alienjoe',
+    'userfrom' => 'testuser',
+  ),
+   'uploaded_files' => 
+  array (
+  ),
+   'skip_mail' => false,
+   'form' => '<p>Subject<br />
+    [text your-subject] </p>
+
+<p>Your Message<br />
+    [textarea your-message] </p>
+
+<p>Please enter the following characters<br>
+[captchac captcha]<br>
+[captchar captcha]</p>
+
+<p>[submit "Contact User"]</p>
+
+[dynamichidden userto "hockeyloyal_user_to"]
+[dynamichidden userfrom "hockeyloyal_user_from"]',
+   'mail' => 
+  array (
+    'subject' => '[your-subject]',
+    'sender' => 'testuser <users@hockeyloyal.com>',
+    'body' => '[your-message]
+
+This message is from the HockeyLoyal user testuser to contact them visit their profile by visiting http://hockeyloyal.com/webspec2012/profile/?fan=testuser',
+    'recipient' => 'alienjoe <joebafia@gmail.com>',
+    'additional_headers' => '',
+    'attachments' => '',
+    'use_html' => '',
+  ),
+   'mail_2' => 
+  array (
+    'active' => '',
+    'subject' => '[your-subject]',
+    'sender' => '[your-name] <[your-email]>',
+    'body' => 'Message body:
+[your-message]
+
+--
+This mail is sent via contact form on HOCKEYLOYAL http://hockeyloyal.com/webspec2012',
+    'recipient' => '[your-email]',
+    'additional_headers' => '',
+    'attachments' => '',
+    'use_html' => '',
+  ),
+   'messages' => 
+  array (
+    'mail_sent_ok' => 'Your message was sent successfully. Thanks.',
+    'mail_sent_ng' => 'Failed to send your message. Please try later or contact the administrator by another method.',
+    'validation_error' => 'Validation errors occurred. Please confirm the fields and submit it again.',
+    'spam' => 'Failed to send your message. Please try later or contact the administrator by another method.',
+    'accept_terms' => 'Please accept the terms to proceed.',
+    'invalid_email' => 'Email address seems invalid.',
+    'invalid_required' => 'Please fill the required field.',
+    'quiz_answer_not_correct' => 'Your answer is not correct.',
+    'captcha_not_match' => 'Your entered code is incorrect.',
+    'upload_failed' => 'Failed to upload file.',
+    'upload_file_type_invalid' => 'This file type is not allowed.',
+    'upload_file_too_large' => 'This file is too large.',
+    'upload_failed_php_error' => 'Failed to upload file. Error occurred.',
+  ),
+   'additional_settings' => '',
+))

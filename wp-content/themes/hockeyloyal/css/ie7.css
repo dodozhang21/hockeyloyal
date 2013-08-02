@@ -1,0 +1,8 @@
+#nav .parent li.nav-button a { line-height: 50px; }
+#nav .nav-social a { margin-top: 13px; }
+#nav .child { top: 45px; }
+
+.dropdown { left: -40px; top: 33px; }
+
+.header-right { margin-top: 60px !important; }
+#own-profile-nav ul { margin-top: 20px; }
