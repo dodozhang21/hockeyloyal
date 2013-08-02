@@ -41,6 +41,24 @@
 							<nav>
 								<div id="nav">
 									<ul class="parent">
+									<?php 
+									$pages = get_pages(array('parent'=>2, 'hierarchical'=>0));
+									if($pages) {
+										foreach($pages as $page) {
+											echo '<li class="nav-button">';
+											echo '<a href="'.get_page_link($page->ID).'">'.$page->post_title.'</a>';
+											if(get_pages( 'child_of='.$page->ID )) {
+												echo '<ul class="child">';
+												wp_list_pages( array('child_of'=> $page->ID, 'title_li'=>'') );
+												echo '</ul>';
+											}
+											echo '</li>';
+										}
+										
+									}
+									?>
+
+										<!--
 										<li class="nav-button">
 											<a href="<?php echo home_url() ?>/about">About</a>
 											<?php if(get_pages( 'child_of=8' )) : ?><ul class="child"><?php wp_list_pages( array('child_of'=> 8, 'title_li'=>'') ); ?></ul><?php endif; ?>
@@ -49,6 +67,10 @@
 											<a href="<?php echo home_url() ?>/shop">Shop</a>
 											<?php if(get_pages( 'child_of=110' )) : ?><ul class="child"><?php wp_list_pages( array('child_of'=> 110, 'title_li'=>'') ); ?></ul><?php endif; ?>
 										</li>
+										-->
+
+
+
 										<?php if(is_user_logged_in()) : ?>
 											
 											<li class="nav-button">
